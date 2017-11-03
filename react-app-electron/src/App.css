@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+}
+
+.List {
+  display: flex;
+  flex-direction: column;
+}
+
+.NewNote {
+  background-color: pink;
+}
