@@ -1,0 +1,22 @@
+{
+  "name": "electron-WDI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electron-WDI/electron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/electron-WDI/electron/issues"
+  },
+  "homepage": "https://github.com/electron-WDI/electron#readme",
+  "dependencies": {
+    "electron": "^1.7.9"
+  }
+}
