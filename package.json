@@ -1,5 +1,5 @@
 {
-  "name": "electron-WDI",
+  "name": "electron-wdi",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -18,5 +18,6 @@
   "homepage": "https://github.com/electron-WDI/electron#readme",
   "dependencies": {
     "electron": "^1.7.9"
-  }
+  },
+  "devDependencies": {}
 }
