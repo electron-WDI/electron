@@ -5,7 +5,7 @@ class Item extends Component {
     return (
       <div className="Item" onClick={() => {this.props.onClickItem(this.props.idItem)}}>
         <div className='titleItem'>{this.props.title}</div>
-        <div className='descItem'>{this.props.description}</div>
+        <div className='descItem'>{this.props.desc}</div>
       </div>
     );
   }

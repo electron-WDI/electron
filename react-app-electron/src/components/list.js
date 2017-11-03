@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Redirect } from "react-router-dom";
 
 import axios from 'axios';
 
@@ -10,30 +9,29 @@ class List extends Component {
     super(props);
 
     this.state = {
-      allItems: {}
+      allItems: []
     }
 
     this.renderItem = this.renderItem.bind(this)
   }
 
   componentDidMount() {
-    axios.get(`${this.props.url}`)
+    axios.get(`${this.props.dataurl}`)
     .then(res => {
-      console.log("res in list", res);
-      // this.setState({
-      //   allItems: res
-      // })
+      this.setState({
+        allItems: res.data.notes
+      })
     })
   }
 
   renderItem() {
-    // const allItems = [];
-    // this.state.allItems.map(e => {
-    //   allItems.push(
-    //     <Item onClickItem={this.props.onClickItem} title={e.title} desc={e.description} idItem={e.id}/>
-    //   )
-    // })
-    // return allItems;
+    const allItemsRender = [];
+    this.state.allItems.map(e => {
+      allItemsRender.push(
+        <Item onClickItem={this.props.onClickItem} title={e.title} desc={e.description} idItem={e.id}/>
+      )
+    })
+    return allItemsRender;
   }
 
   render() {
