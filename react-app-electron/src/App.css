@@ -1,19 +1,35 @@
 .App {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100vh;
+  background: #DDC4B8;
+	font-family: 'Indie Flower', cursive;
+
 }
 
 .List {
   flex:1;
   display: flex;
   flex-direction: column;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .Item {
-  border: 1px solid black;
+  border-radius: 4px;
   margin: 5px;
+  background-color: #A7D6C6;
+  box-shadow: 3px 3px 2px #888888;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.Item:hover {
+  border: 1px solid #939B9B;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
 }
 
 .View {
@@ -22,6 +38,17 @@
 }
 
 .NewNote {
-  background-color: pink;
+  background-color: #EFEDDE;
   height: 100%;
+}
+
+h1 {
+}
+
+.titleItem{
+	font-size: 24px;
+}
+
+.descItem{
+	font-size: 18px;
 }
