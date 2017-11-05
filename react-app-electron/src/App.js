@@ -12,17 +12,51 @@ class App extends Component {
       mode: "newnote",
       itemclickedid: 0,
       url: 'http://localhost:8080/notes/',
-      itemafterdeleted: 0
+      itemafterdeleted: 0,
+      hasBeenCreated: false,
+      hasBeenDeleted: false
     }
 
     this.renderOneView = this.renderOneView.bind(this)
+    this.newItemSend = this.newItemSend.bind(this)
     this.onClickItem = this.onClickItem.bind(this)
-    this.afterOneDeleted = this.afterOneDeleted.bind(this)
+
+    this.changeModeNew = this.changeModeNew.bind(this)
+    this.newItemSendDone = this.newItemSendDone.bind(this)
+
+    this.itemDeleted = this.itemDeleted.bind(this)
+    this.itemDeletedDone = this.itemDeletedDone.bind(this)
   }
 
   renderOneView(id) {
     this.setState({
       mode: "viewone"
+    })
+  }
+
+  newItemSend(id) {
+    this.onClickItem(id);
+    this.setState({
+      hasBeenCreated: true
+    })
+  }
+
+  newItemSendDone() {
+    this.setState({
+      hasBeenCreated: false
+    })
+  }
+
+  itemDeleted() {
+    this.changeModeNew();
+    this.setState({
+      hasBeenDeleted: true
+    })
+  }
+
+  itemDeletedDone() {
+    this.setState({
+      hasBeenDeleted: false
     })
   }
 
@@ -33,17 +67,39 @@ class App extends Component {
     })
   }
 
-  afterOneDeleted() {
+  changeModeNew() {
     this.setState({
-      mode: "viewone"
+      mode: "newnote"
     })
   }
 
   render() {
       return (
       <div className="App">
-        <List dataurl={this.state.url} onClickItem={this.onClickItem}/>
-        <View dataurl={this.state.url} mode={this.state.mode} itemclickedid={this.state.itemclickedid} itemafterdeleted={this.afterOneDeleted}/>
+        <List
+          dataurl={this.state.url}
+          onClickItem={this.onClickItem}
+          hasBeenCreated={this.state.hasBeenCreated}
+          newItemSendDone={this.newItemSendDone}
+          hasBeenDeleted={this.state.hasBeenDeleted}
+          itemDeletedDone={this.itemDeletedDone} />
+
+        <div className="divLogo">
+          <img className="logo" src="/images/noted.png"  alt="logonoted"/>
+        </div>
+
+        <div className="divButtonPlusNew">
+          <button className="buttonPlusNew"onClick={this.changeModeNew}>+</button>
+        </div>
+
+        <View
+          dataurl={this.state.url}
+          mode={this.state.mode}
+          onClickItem={this.onClickItem}
+          itemclickedid={this.state.itemclickedid}
+          changeMode={this.changeModeNew}
+          newItemSend={this.newItemSend}
+          itemDeleted={this.itemDeleted} />
       </div>
       )
   }
