@@ -1,5 +1,5 @@
 {
-  "name": "electron-WDI",
+  "name": "electron-wdi",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -19,5 +19,6 @@
   "dependencies": {
     "axios": "^0.17.0",
     "electron": "^1.7.9"
-  }
+  },
+  "devDependencies": {}
 }
