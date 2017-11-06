@@ -5,7 +5,7 @@ Electron is an open-sourced framework for creating native applications with popu
 
 Building cross-platform desktop applications comes with a unique set of challenges that can stand in your way when you are trying to transform your ideas into software. Web apps avoid some of these hurdles, but they have limitations that make them impractical for building native desktop applications. Electron lets you harness the best parts of these technologies to build beautiful, cross-platform desktop applications using the most common technologies. 
 
-Furthermore, Electron also known as "Atom Shell" offers cross-platform functionality by providing rich Javascript APIs that handle the particulars of talking to different operating systems, it also uses webpages for creating user interfaces. Moreover, with the use of Chromimum Browser and Node.js it makes it convenient for developers to run their apps natively on Javascript, HTML and CSS on all kinds of platforms. 
+Furthermore, Electron also known as "Atom Shell" offers cross-platform functionality by providing rich Javascript APIs that handle the particulars of talking to different operating systems, it also uses webpages for creating user interfaces. With the use of Chromimum Browser and Node.js, it makes it convenient for developers to run their apps natively on Javascript, HTML and CSS on all kinds of platforms. 
 
 ## How it Works
 
@@ -51,7 +51,9 @@ Your life is busy and your head can feel jumbled with so many things to do. Well
 ## Technologies Used
 The technologies used for this application include:
 Frontend- React & CSS
+
 Backend- Node.js, Express
+
 Packages- Electron, body-parser, cors and pg-promise
 
 The backend holds all the data needed to save, delete and create new notes. React allowed for a more tuned front-end user experience, while css aided in all of the styling. 
