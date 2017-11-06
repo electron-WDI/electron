@@ -71,7 +71,7 @@ The backend holds all the data needed to save, delete and create new notes. Reac
 We made sure that the main field directed to the appropriate directory, if not, Electron would have attempted to load an index.js file.
 
 
---The *main.js* should create windows and handle system events, a typical example would look something like this:
+The *main.js* should create windows and handle system events, a typical example would look something like this:
 ```javascript
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
@@ -126,7 +126,7 @@ app.on('activate', () => {
   }
 })
 ```
-Within this file we altered only a small snippet of the code, the createWindow function to work with our react app.
+--Within this file we altered only a small snippet of the code, the createWindow function to work with our react app.
 
 
 ```javascript
