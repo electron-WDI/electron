@@ -154,8 +154,13 @@ Electron is a unique platform that many developers should take advantage of. Thi
 
 ## Resources
 +[Electron's Main Page](https://electron.atom.io/docs/)
+
 +[Sample Starter App's Created by the Community](https://electron.atom.io/community/#boilerplates)
+
 +[Electron Quick Start](https://github.com/electron/electron-quick-start)
+
 +[Electron Simple Samples](https://electron.atom.io/blog/2017/01/19/simple-samples)
+
 +[Demo App for Electron APIs](https://github.com/hokein/electron-sample-apps)
+
 +[Apps Created with Electron](https://github.com/sindresorhus/awesome-electron)
