@@ -1,45 +1,38 @@
-# electron-quick-start
+#Electron
+![electron](https://electron.atom.io/images/opengraph.png)
 
-**Clone and run for a quick way to see Electron in action.**
+Electron is an open-sourced framework for creating native applications with popular web technologies like HTML, CSS, and Javascript.  This platform aids web developers and designers to quickly transition into the desktop environment, avoiding all the complications faced in creating a web application.
 
-This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
+Building cross-platform desktop applications comes with a unique set of challenges that can stand in your way when you are trying to transform your ideas into software. Web apps avoid some of these hurdles, but they have limitations that make them impractical for building native desktop applications. Electron lets you harness the best parts of these technologies to build beautiful, cross-platform desktop applications using the most common technologies. 
 
-**Use this app along with the [Electron API Demos](http://electron.atom.io/#get-started) app for API code examples to help you get started.**
+Electron also known as "Atom Shell" offers cross-platform functionality by providing rich Javascript APIs that handle the particulars of talking to different operating systems, it also uses webpages for creating user interfaces. Moreover, with the use of Chromimum Browser and Node.js it makes it convenient for developers to run their apps natively on Javascript, HTML and CSS on all kinds of platforms. 
 
-A basic Electron application needs just these files:
+#How it Works
 
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
+Electron takes a *main* file defined in your *package.json* file and executes it. This main file (usually named *main.js*) then creates application windows which contain rendered web pages with the added power of interacting with the native GUI of your operating system. In detail, once you start up an application using Electron, a *main process* is created. This *main process* is responsible for interacting with the native GUI of your operating system and creates the GUI of your application. 
 
-You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start).
+In short, Electron states:
+	A basic Electron application needs just these files:
 
-## To Use
+	- `package.json` - Points to the app's main file and lists its details and dependencies.
+	- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
+	- `index.html` - A web page to render. This is the app's **renderer process**.
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+	You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start).
 
-```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
-npm install
-# Run the app
-npm start
-```
+#Instructions
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+-Open your termainl and clone the repository:
+	git clone https://github.com/bojzi/sound-machine-electron-guide.git
+-Direct yourself into the repository
+	cd electron-quick-start
+-Install all the required packages
+	npm install
+-Lastly run the application
+	npm start
 
-## Resources for Learning Electron
+Electron makes it simple and convenient for anyone to use. 
 
-- [electron.atom.io/docs](http://electron.atom.io/docs) - all of Electron's documentation
-- [electron.atom.io/community/#boilerplates](http://electron.atom.io/community/#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
-
-## License
-
-[CC0 1.0 (Public Domain)](LICENSE.md)
+#Applications Built on Electron 
+![apps built on electron](http://www.clariontech.com/sites/default/files/inline-images/Electron%20blog%20inner%20image_0.png)
+With Electron's powerful runtime, it has since been used to create numerous applications by companies like Microsoft, Facebook, Stack and Docker. Partake in this growing community and let your app shine!

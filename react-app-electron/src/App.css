@@ -29,6 +29,7 @@
       width: 30%;
       max-width: 350px;
       overflow: scroll;
+      margin-left: 10.5%;
     }
 
         .Item {
@@ -65,8 +66,8 @@
       position: fixed;
       top: 20px;
       right: 20px;
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
       z-index: 2;
     }
 
@@ -75,7 +76,7 @@
           width: 100%;
           border-radius: 50%;
           border: 1px dotted #D81E5B;
-          font-size: 25px;
+          font-size: 24px;
           background-color: white;
           color: #D81E5B;
         }
@@ -95,10 +96,10 @@
       margin: 0 11%;
       padding: 30px;
       border-radius: 5px;
-      background: -webkit-linear-gradient(#C6D8D3, #FDF0D5); /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#C6D8D3, #FDF0D5); /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#C6D8D3, #FDF0D5); /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#C6D8D3, #FDF0D5); /* Standard syntax */
+      background: -webkit-linear-gradient(#d8d0c6, #FDF0D5); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#d8d0c6, #FDF0D5); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#d8d0c6, #FDF0D5); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#d8d0c6, #FDF0D5); /* Standard syntax */
     }
 
         .NewNote, .OneNoteContainer {
@@ -200,3 +201,62 @@
                       height: 100%;
                       padding: 10px;
                     }
+@media only screen and (max-width: 500px) {
+    
+.List {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      max-width: 350px;
+      overflow: scroll;
+      margin-left: 2%;
+      height: 60%;
+
+    }
+
+        .Item {
+          border-radius: 4px;
+          margin: 10px 20px;
+          background-color: #FDF0D5;
+          box-shadow: 3px 3px 2px #888888;
+          padding: 8px;
+          cursor: pointer;
+        }
+
+        .Item:hover {
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+          outline-color: rgba(255, 255, 255, 0);
+          outline-offset: 15px;
+        }
+
+            .titleItem{
+              font-size: 20px;
+              text-align: center;
+              border-bottom: 1px dotted black;
+            }
+
+            .descItem{
+              font-size: 15px;
+            }
+
+            .savedItem, .createdItem{
+              text-align: right;
+              font-size: 13px;
+            }
+    .View {
+      display: flex;
+      justify-content: flex-end;
+      /*top: 10vh;*/
+      left: 30%;
+      width: 40%;
+      height: 70vh;
+      margin: 5% 11%;
+      padding: 14px;
+      border-radius: 5px;
+      background: -webkit-linear-gradient(#d8d0c6, #FDF0D5); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#d8d0c6, #FDF0D5); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#d8d0c6, #FDF0D5); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#d8d0c6, #FDF0D5); /* Standard syntax */
+    }
+  }
+
