@@ -24,16 +24,20 @@ A basic Electron application needs just these files:
 ## Instructions
 
 -Open your termainl and clone the repository:
-	*git clone https://github.com/bojzi/sound-machine-electron-guide.git
+
+	* git clone https://github.com/bojzi/sound-machine-electron-guide.git
 
 -Direct yourself into the repository
-	*cd electron-quick-start
+
+	* cd electron-quick-start
 
 -Install all the required packages
-	*npm install
+
+	* npm install
 
 -Lastly run the application
-	*npm start
+
+	* npm start
 
 Electron makes it simple and convenient for anyone to use. 
 
