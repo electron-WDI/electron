@@ -126,7 +126,7 @@ app.on('activate', () => {
   }
 })
 ```
---Within this file we altered only a small snippet of the code, the createWindow function to work with our react app.
+Within this file we altered only a small snippet of the code, the createWindow function to work with our react app.
 
 
 ```javascript
