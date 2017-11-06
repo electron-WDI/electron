@@ -149,6 +149,7 @@ app.on('activate', () => {
 
 ## Dependencies
 ![electron gif](http://img55.laughinggif.com/pic/HTTP2Jlc3RhbmltYXRpb25zLmNvbS9TY2llbmNlL0NoZW1pc3RyeS9hdG9tLWVsZWN0cm9uLXByb3Rvbi1vcmJpdC1zdHJ1Y3R1cmUtYW5pbWF0ZWQtZ2lmLTMuZ2lm.gif)
+
 Electron is a unique platform that many developers should take advantage of. This framework is unique in itself by allowing developers to use familiarized languages to solely focus and create their web applications. Although Electron is unique in itself it does run on Javascript, HTML & CSS and is similarly activated like React. 
 
 ## Resources
