@@ -50,6 +50,7 @@ Your life is busy and your head can feel jumbled with so many things to do. Well
 
 ## Technologies Used
 The technologies used for this application include:
+
 Frontend- React & CSS
 
 Backend- Node.js, Express
@@ -68,6 +69,7 @@ The backend holds all the data needed to save, delete and create new notes. Reac
 ```
 -- an example of the *package.json* file.
 We made sure that the main field directed to the appropriate directory, if not, Electron would have attempted to load an index.js file.
+
 
 --The *main.js* should create windows and handle system events, a typical example would look something like this:
 ```javascript
@@ -125,6 +127,8 @@ app.on('activate', () => {
 })
 ```
 --Within this file we altered only a small snippet of the code, the createWindow function to work with our react app.
+
+
 ```javascript
 <!DOCTYPE html>
 <html>
@@ -141,6 +145,7 @@ app.on('activate', () => {
 </html>
 ```
 --Finally an example of an *index.html* directory of the web page that will be shown.
+
 
 ## Dependencies
 [electron gif](http://img55.laughinggif.com/pic/HTTP2Jlc3RhbmltYXRpb25zLmNvbS9TY2llbmNlL0NoZW1pc3RyeS9hdG9tLWVsZWN0cm9uLXByb3Rvbi1vcmJpdC1zdHJ1Y3R1cmUtYW5pbWF0ZWQtZ2lmLTMuZ2lm.gif)
