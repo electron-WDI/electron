@@ -23,11 +23,11 @@ A basic Electron application needs just these files:
 
 ## Instructions
 
--Open your termainl and clone the repository:
+-Open your terminal and clone the repository:
 
 	* git clone https://github.com/bojzi/sound-machine-electron-guide.git
 
--Direct yourself into the repository
+-Direct yourself into the appropriate repository
 
 	* cd electron-quick-start
 
